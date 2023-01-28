@@ -214,7 +214,7 @@ internal class MonkTwinSnakes : CustomCombo
                         return MNK.TwinSnakes;
                 }
 
-                if (FindEffect(MNK.Buffs.DisciplinedFist)?.RemainingTime > 6.0)
+                if (FindEffect(MNK.Buffs.DisciplinedFist)?.RemainingTime > 4.0)
                     return MNK.TrueStrike;
             }
         }
@@ -233,7 +233,7 @@ internal class MonkDemolish : CustomCombo
         {
             if (IsEnabled(CustomComboPreset.MonkDemolishFeature))
             {
-                if (level < MNK.Levels.Demolish || FindTargetEffect(MNK.Debuffs.Demolish)?.RemainingTime > 6.0)
+                if (level < MNK.Levels.Demolish || FindTargetEffect(MNK.Debuffs.Demolish)?.RemainingTime > 4.0)
                     return MNK.SnapPunch;
             }
         }
